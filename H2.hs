@@ -13,8 +13,8 @@
 module H2 where
 
 oneBeforeLast :: [a] -> a
-oneBeforeLast (x:y:[]) = x
+oneBeforeLast [x, y] = x
 oneBeforeLast (_:xs) = oneBeforeLast xs
 
 oneBeforeLast' :: [a] -> a
-oneBeforeLast' xs = (head . tail . reverse) xs
+oneBeforeLast' = head . tail . reverse

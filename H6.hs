@@ -12,4 +12,4 @@
 module H6 where
 
 isPalindrome :: Eq a => [a] -> Bool
-isPalindrome xs = (reverse xs) == xs
+isPalindrome xs = reverse xs == xs

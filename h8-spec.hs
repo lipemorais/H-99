@@ -3,7 +3,7 @@ import H8
 
 main :: IO ()
 
-main = hspec $ do
+main = hspec .
     describe "compress" $ do
         it  "compress [3,3] in [3]" $ do
             compress [3,3] `shouldBe` [3]

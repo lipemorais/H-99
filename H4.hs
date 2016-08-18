@@ -15,4 +15,4 @@ myLength [] = 0
 myLength (_:xs) = 1 + myLength xs
 
 myLength' :: [a] -> Int
-myLength' xs = foldr (\_ n -> 1 + n) 0 xs
+myLength' = foldr (\_ n -> 1 + n) 0
